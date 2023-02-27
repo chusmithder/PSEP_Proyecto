@@ -1,0 +1,75 @@
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.deps.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.runtimeconfig.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.AssemblyInfo.cs
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\refint\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.genruntimeconfig.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\ref\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\4- Com Sincrona\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\4- Com Sincrona\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.deps.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\4- Com Sincrona\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.runtimeconfig.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\4- Com Sincrona\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\4- Com Sincrona\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\4- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\4- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\4- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\4- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.AssemblyInfo.cs
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\4- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\4- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\4- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\refint\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\4- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\4- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.genruntimeconfig.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\4- Com Sincrona\2-Cli Sincrono\obj\Debug\net6.0\ref\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\6-T1 Sync\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\6-T1 Sync\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.deps.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\6-T1 Sync\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.runtimeconfig.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\6-T1 Sync\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\6-T1 Sync\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\6-T1 Sync\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\6-T1 Sync\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\6-T1 Sync\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\6-T1 Sync\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.AssemblyInfo.cs
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\6-T1 Sync\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\6-T1 Sync\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\6-T1 Sync\2-Cli Sincrono\obj\Debug\net6.0\refint\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\6-T1 Sync\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\6-T1 Sync\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.genruntimeconfig.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\6-T1 Sync\2-Cli Sincrono\obj\Debug\net6.0\ref\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\7-T2 ASync DEMO\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\7-T2 ASync DEMO\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.deps.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\7-T2 ASync DEMO\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.runtimeconfig.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\7-T2 ASync DEMO\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\7-T2 ASync DEMO\2-Cli Sincrono\bin\Debug\net6.0\2-Cli Sincrono.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\7-T2 ASync DEMO\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\7-T2 ASync DEMO\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\7-T2 ASync DEMO\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\7-T2 ASync DEMO\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.AssemblyInfo.cs
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\7-T2 ASync DEMO\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\7-T2 ASync DEMO\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\7-T2 ASync DEMO\2-Cli Sincrono\obj\Debug\net6.0\refint\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\7-T2 ASync DEMO\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\7-T2 ASync DEMO\2-Cli Sincrono\obj\Debug\net6.0\2-Cli Sincrono.genruntimeconfig.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\7-T2 ASync DEMO\2-Cli Sincrono\obj\Debug\net6.0\ref\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Cliente\bin\Debug\net6.0\2-Cli Sincrono.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Cliente\bin\Debug\net6.0\2-Cli Sincrono.deps.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Cliente\bin\Debug\net6.0\2-Cli Sincrono.runtimeconfig.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Cliente\bin\Debug\net6.0\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Cliente\bin\Debug\net6.0\2-Cli Sincrono.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Cliente\obj\Debug\net6.0\2-Cli Sincrono.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Cliente\obj\Debug\net6.0\2-Cli Sincrono.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Cliente\obj\Debug\net6.0\2-Cli Sincrono.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Cliente\obj\Debug\net6.0\2-Cli Sincrono.AssemblyInfo.cs
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Cliente\obj\Debug\net6.0\2-Cli Sincrono.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Cliente\obj\Debug\net6.0\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Cliente\obj\Debug\net6.0\refint\2-Cli Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Cliente\obj\Debug\net6.0\2-Cli Sincrono.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Cliente\obj\Debug\net6.0\2-Cli Sincrono.genruntimeconfig.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Cliente\obj\Debug\net6.0\ref\2-Cli Sincrono.dll

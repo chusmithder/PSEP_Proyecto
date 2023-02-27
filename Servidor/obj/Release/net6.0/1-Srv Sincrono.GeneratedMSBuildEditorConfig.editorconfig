@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = _1_Srv_Sincrono
+build_property.ProjectDir = C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\3- UT3- Comunicacion en red\3- Com Sincrona\1-Srv Sincrono\
