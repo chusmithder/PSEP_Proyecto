@@ -26,11 +26,12 @@ namespace clientesincrono {
                     //conectar con la ip y puerto del servidor
                     sender.Connect(remoteEP);
                     Console.WriteLine("Socket connected to {0}", sender.RemoteEndPoint.ToString());
-                    
+                    Console.WriteLine("Bienvenido a nuestra aplicacion");
+
                     while (true) {
                         //mostrar mensaje a cliente
-                        Console.WriteLine("Bienvenido a nuestra aplicacion\n" + 
-                            "Debes teclear el nombre del archivo que desas solicitar al servidor");
+                        Console.WriteLine("\n---------------------------");
+                        Console.WriteLine("Debes teclear el nombre del archivo (SIN EXTENSION) que desas solicitar al servidor");
                         string nombreArchivo = Console.ReadLine();
 
                         //enviar peticion de archivo al servidor
@@ -46,16 +47,17 @@ namespace clientesincrono {
                         
                         //parsear respuesta servidor
                         int posSep = respSrv.IndexOf("*****");
-                        string strArchivo = respSrv.Substring(0, posSep);
-                        string strExiste = respSrv.Substring(posSep + 5);
+                        string strExiste = respSrv.Substring(0, posSep);//serializado
+                        string strArchivo = respSrv.Substring(posSep + 5);
                         
 
-                        if (strExiste == "no existe") {
-                            Console.WriteLine("Este archivo {0} NO existe en el servidor", nombreArchivo);
+                        if (strExiste == "NO EXISTE") {
+                            Console.WriteLine("Este archivo {0} NO existe en el servidor\n", nombreArchivo);
                         } else {
-                            Console.WriteLine("Este archivo {0} EXISTE en el servidor", nombreArchivo);
+                            Console.WriteLine("Este archivo {0} EXISTE en el servidor\n", nombreArchivo);
                             //recoger el archivo
-                            //...
+                            Console.WriteLine("Contenido del archivo {0}.json: \n{1}\n", nombreArchivo, strArchivo);
+                            
                         }
 
                         //preguntar si quiere seguir

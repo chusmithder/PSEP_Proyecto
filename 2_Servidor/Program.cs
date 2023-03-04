@@ -5,7 +5,6 @@ using System.Net.Sockets;
 using System.Text;
 using System.Collections.Generic;
 
-
 namespace servidorsincrono
 {
     public class SynchronousSocketListener
@@ -82,29 +81,31 @@ namespace servidorsincrono
                         string mensaje = "";
                         string mensajeSrv = "";
 
-                        if (estaArchivoEnServicio(data)) {
+                        if (estaItemEnServicio(data)) {
                             //enviamos el mensaje de exito y el archivo
 
                             //mensaje
-                            mensaje += "existe";
+                            mensaje += "EXISTE";
                             mensaje += "*****";
                             
                             //archivo
+                            string itemJSON = obtenerItemJSON(data);
 
+                            mensaje += itemJSON;
 
                             //srv
                             mensajeSrv += "-----> EXISTE";
 
                         } else {
                             //enviamos el mensaje de error y null
-                            mensaje += "no existe";
+                            mensaje += "NO EXISTE";
                             mensaje += "*****";
 
                             //archivo
                             mensaje += "null";
 
                             //srv
-                            mensajeSrv += "-----> NO existe";
+                            mensajeSrv += "-----> NO EXISTE";
                         }
 
                         Console.WriteLine(mensajeSrv);
@@ -135,9 +136,32 @@ namespace servidorsincrono
 
         }
 
-        //verifica si un archivo esta en el servicio
-        static bool estaArchivoEnServicio(string nombrearchivo) {
-            return true;
+        //verifica si un objeto esta en el servicio
+        //para despues enviarlo o no
+        static bool estaItemEnServicio(string nombre) {
+            List<TodoItem> list = APIConsumer.GetItems();
+            foreach(TodoItem item in list) {
+                if (item.Name.ToLower() == nombre.ToLower()) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        //verifica si un objeto esta en el servicio
+        //para despues enviarlo o no
+        static string obtenerItemJSON(string nombre) {
+            List<TodoItem> list = APIConsumer.GetItems();
+            TodoItem item = null;
+            foreach(TodoItem i in list) {
+                if (i.Name.ToLower() == nombre.ToLower()) {
+                    item = i;
+                }
+            }
+            if (item != null) {
+                return item.ToJson();
+            }
+            return null;
         }
 
         static IPAddress getLocalIpAddress()
@@ -171,12 +195,12 @@ namespace servidorsincrono
 
         public static int Main(String[] args)
         {
-            // StartListening();
+            StartListening();
+            return 0;
+            // //prueba
+            // TodoItem item = APIConsumer.GetItems(1);
+            // Console.WriteLine(item.Name);
             // return 0;
-            //prueba
-            TodoItem item = APIConsumer.GetItems(1);
-            Console.WriteLine(item.Name);
-
         }
     }
 }

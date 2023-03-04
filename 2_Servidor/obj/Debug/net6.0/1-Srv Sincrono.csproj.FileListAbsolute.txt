@@ -81,3 +81,12 @@ C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\obj\Debug\net6.
 C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\obj\Debug\net6.0\1-Srv Sincrono.dll
 C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\obj\Debug\net6.0\refint\1-Srv Sincrono.dll
 C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\obj\Debug\net6.0\1-Srv Sincrono.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\bin\Debug\net6.0\1-Srv Sincrono.exe
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\bin\Debug\net6.0\1-Srv Sincrono.deps.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\bin\Debug\net6.0\1-Srv Sincrono.runtimeconfig.json
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\bin\Debug\net6.0\1-Srv Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\bin\Debug\net6.0\1-Srv Sincrono.pdb
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\bin\Debug\net6.0\RestSharp.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\obj\Debug\net6.0\1-Srv Sincrono.csproj.CopyComplete
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\obj\Debug\net6.0\1-Srv Sincrono.genruntimeconfig.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\obj\Debug\net6.0\ref\1-Srv Sincrono.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\Cliente\\2-Cli Sincrono.csproj": {}
+    "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\3_Cliente\\2-Cli Sincrono.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\Cliente\\2-Cli Sincrono.csproj": {
+    "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\3_Cliente\\2-Cli Sincrono.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\Cliente\\2-Cli Sincrono.csproj",
+        "projectUniqueName": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\3_Cliente\\2-Cli Sincrono.csproj",
         "projectName": "2-Cli Sincrono",
-        "projectPath": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\Cliente\\2-Cli Sincrono.csproj",
+        "projectPath": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\3_Cliente\\2-Cli Sincrono.csproj",
         "packagesPath": "C:\\Users\\chusm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\Cliente\\obj\\",
+        "outputPath": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\3_Cliente\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
