@@ -73,3 +73,11 @@ C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Servidor\obj\Debug\net6.0\
 C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Servidor\obj\Debug\net6.0\1-Srv Sincrono.pdb
 C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Servidor\obj\Debug\net6.0\1-Srv Sincrono.genruntimeconfig.cache
 C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\Servidor\obj\Debug\net6.0\ref\1-Srv Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\obj\Debug\net6.0\1-Srv Sincrono.csproj.AssemblyReference.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\obj\Debug\net6.0\1-Srv Sincrono.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\obj\Debug\net6.0\1-Srv Sincrono.AssemblyInfoInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\obj\Debug\net6.0\1-Srv Sincrono.AssemblyInfo.cs
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\obj\Debug\net6.0\1-Srv Sincrono.csproj.CoreCompileInputs.cache
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\obj\Debug\net6.0\1-Srv Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\obj\Debug\net6.0\refint\1-Srv Sincrono.dll
+C:\Users\chusm\Desktop\0- DAM2 Trabajos\PSEP\Proyecto\2_Servidor\obj\Debug\net6.0\1-Srv Sincrono.pdb

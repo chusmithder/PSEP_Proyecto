@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "b8QZtGmq1tpHdEZY/cXi5bo1X/nJ0ir1/gyZ1lacS9OpgfNpeaubM0oS2nNT8eREi2+WWFrLcaeCGzfMaY9gVQ==",
+  "dgSpecHash": "X0XWmK+T4/0MvwMPkqcJWbXMecr8/UOdbcZE43lERRttqD1IGXtD0P+FMT/BNu9IlGb1y8MinfxFqhYsMuC9rw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\Servidor\\1-Srv Sincrono.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\2_Servidor\\1-Srv Sincrono.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\chusm\\.nuget\\packages\\restsharp\\108.0.3\\restsharp.108.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -171,8 +171,11 @@ namespace servidorsincrono
 
         public static int Main(String[] args)
         {
-            StartListening();
-            return 0;
+            // StartListening();
+            // return 0;
+            TodoItem item = APIConsumer.GetItems(1);
+            Console.WriteLine(item.Name);
+
         }
     }
 }

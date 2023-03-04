@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\Servidor\\1-Srv Sincrono.csproj": {}
+    "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\2_Servidor\\1-Srv Sincrono.csproj": {}
   },
   "projects": {
-    "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\Servidor\\1-Srv Sincrono.csproj": {
+    "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\2_Servidor\\1-Srv Sincrono.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\Servidor\\1-Srv Sincrono.csproj",
+        "projectUniqueName": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\2_Servidor\\1-Srv Sincrono.csproj",
         "projectName": "1-Srv Sincrono",
-        "projectPath": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\Servidor\\1-Srv Sincrono.csproj",
+        "projectPath": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\2_Servidor\\1-Srv Sincrono.csproj",
         "packagesPath": "C:\\Users\\chusm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\Servidor\\obj\\",
+        "outputPath": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\2_Servidor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -45,6 +45,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "RestSharp": {
+              "target": "Package",
+              "version": "[108.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

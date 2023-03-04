@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "RestSharp/108.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/RestSharp.dll": {
+            "related": ".xml"
+          }
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "RestSharp/108.0.3": {
+      "sha512": "phq1AkVhqVXHZxvWDV4fJEJKCR5OHNFUGx2Ix8o5EFShS6654oZhth4X2RWvaU/W7UexIswW0T+lTirxfLU2Ow==",
+      "type": "package",
+      "path": "restsharp/108.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/RestSharp.dll",
+        "lib/net5.0/RestSharp.xml",
+        "lib/net6.0/RestSharp.dll",
+        "lib/net6.0/RestSharp.xml",
+        "lib/netstandard2.0/RestSharp.dll",
+        "lib/netstandard2.0/RestSharp.xml",
+        "restsharp.108.0.3.nupkg.sha512",
+        "restsharp.nuspec",
+        "restsharp.png"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "RestSharp >= 108.0.3"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\chusm\\.nuget\\packages\\": {},
@@ -15,11 +50,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\Servidor\\1-Srv Sincrono.csproj",
+      "projectUniqueName": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\2_Servidor\\1-Srv Sincrono.csproj",
       "projectName": "1-Srv Sincrono",
-      "projectPath": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\Servidor\\1-Srv Sincrono.csproj",
+      "projectPath": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\2_Servidor\\1-Srv Sincrono.csproj",
       "packagesPath": "C:\\Users\\chusm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\Servidor\\obj\\",
+      "outputPath": "C:\\Users\\chusm\\Desktop\\0- DAM2 Trabajos\\PSEP\\Proyecto\\2_Servidor\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -53,6 +88,12 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "RestSharp": {
+            "target": "Package",
+            "version": "[108.0.3, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
