@@ -116,6 +116,7 @@ namespace servidorsincrono
                             mensajeSrv += "-----> NO EXISTE";
                         }
 
+
                         Console.WriteLine(mensajeSrv);
                         //enviamos al cliente el mensaje
                         //encriptar mensaje a enviar

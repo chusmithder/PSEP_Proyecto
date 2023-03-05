@@ -85,8 +85,16 @@ namespace clientesincrono {
                             Console.WriteLine("Este archivo {0} NO existe en el servidor\n", nombreArchivo);
                         } else {
                             Console.WriteLine("Este archivo {0} EXISTE en el servidor\n", nombreArchivo);
-                            //recoger el archivo
+
                             Console.WriteLine("Contenido del archivo {0}.json: \n{1}\n", nombreArchivo, strArchivo);
+                            
+                            string path = nombreArchivo + ".json";
+                            //creamos archivo con el nombre y lo abrimos
+                            CrearArchivo(path, strArchivo);
+
+                            
+                            // System.Diagnostics.Process.Start("\\");
+                            
                         }
 
                         //preguntar si quiere seguir
@@ -118,6 +126,11 @@ namespace clientesincrono {
             } catch (Exception e) {
                 Console.WriteLine(e.ToString());
             }
+        }
+
+        static void CrearArchivo(string fileName, string content) {
+
+            File.WriteAllText(fileName, content);
         }
 
         static string[] encriptar(string str) {
