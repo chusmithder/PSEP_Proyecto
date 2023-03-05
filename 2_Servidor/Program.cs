@@ -110,6 +110,8 @@ namespace servidorsincrono
 
                         Console.WriteLine(mensajeSrv);
                         //enviamos al cliente el mensaje
+                        //encriptar mensaje a enviar
+                        
                         byte[] msgToClient = Encoding.ASCII.GetBytes(mensaje);
                         handler.Send(msgToClient);
 
@@ -136,8 +138,13 @@ namespace servidorsincrono
 
         }
 
+        string encriptar(string str) {
+            return "";
+        }
+
         //verifica si un objeto esta en el servicio
         //para despues enviarlo o no
+        //
         static bool estaItemEnServicio(string nombre) {
             List<TodoItem> list = APIConsumer.GetItems();
             foreach(TodoItem item in list) {
