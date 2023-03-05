@@ -8,14 +8,20 @@ namespace servidorsincrono
 {
     public class RsaEncryptionStatic {
         private RSACryptoServiceProvider csp;
+        //clave privada para desencriptar
         private RSAParameters _privateKey;
+        //clave publica para encriptar
         private RSAParameters _publicKey;
 
+
+        // a traves del constructor, nos generara claves aleatorias
         public RsaEncryptionStatic() {
             csp = new RSACryptoServiceProvider(2048);
             _privateKey = csp.ExportParameters(true);
             _publicKey = csp.ExportParameters(false);
         }
+
+        //obtener la clave publica
         public string GetPublicKey() {
             var sw = new StringWriter();
             var xs = new XmlSerializer(typeof(RSAParameters));
@@ -23,6 +29,8 @@ namespace servidorsincrono
             return sw.ToString();
         }
 
+
+        //obtener clave privada
         public string GetPrivateKey() {
             var sw = new StringWriter();
             var xs = new XmlSerializer(typeof(RSAParameters));
@@ -30,22 +38,7 @@ namespace servidorsincrono
             return sw.ToString();
         }
 
-        // public void setPublicKey() {
-        // }
-
-        // public static string ExportPublicParametersToXml(RSACryptoServiceProvider rsa)
-        // {
-        //     RSAParameters publicParameters = new RSAParameters();
-        //     publicParameters.Exponent = rsa.ExportParameters(false).Exponent;
-        //     publicParameters.Modulus = rsa.ExportParameters(false).Modulus;
-        //     using (StringWriter writer = new Utf8StringWriter())
-        //     {
-        //         XmlSerializer xml = new XmlSerializer(typeof(RSAParameters));
-        //         xml.Serialize(writer, publicParameters);
-        //         return writer.ToString();
-        //     }
-        // }
-
+        //Crear parametros desde una cadena
         public static RSAParameters PublicParametersFromXml(string data)
         {
             XmlSerializer xml = new XmlSerializer(typeof(RSAParameters));
@@ -57,6 +50,7 @@ namespace servidorsincrono
             return (RSAParameters)result;
         }
 
+        //encriptar mediante la clave publica
         public string Encrypt(string plainText, RSAParameters publicKey) {
             csp = new RSACryptoServiceProvider();
             csp.ImportParameters(publicKey);
@@ -65,6 +59,7 @@ namespace servidorsincrono
             return Convert.ToBase64String(cypher);
         }
 
+        //Desencriptar con la clave privada
         public string Decrypt(string cypherText, RSAParameters privateKey) {
             var dataBytes = Convert.FromBase64String(cypherText);
             csp = new RSACryptoServiceProvider();
@@ -74,51 +69,4 @@ namespace servidorsincrono
         }
     }
 
-    // public class Test2{
-    //     public static void Main() {
-    //         //instanciamos
-    //         RsaEncryptionStatic rsa = new RsaEncryptionStatic();
-    //         RsaEncryptionStatic rsa2 = new RsaEncryptionStatic();
-
-    //         //obtenemos string de claves privadas y publicas
-    //         //seran las que mandamos
-    //         string pubKeyStr = rsa.GetPublicKey();
-    //         string privKeyStr = rsa.GetPrivateKey();
-
-    //         //convertimos string de claves en RSAParameters
-    //         var pubKey = RsaEncryptionStatic.PublicParametersFromXml(pubKeyStr);
-    //         var privKey = RsaEncryptionStatic.PublicParametersFromXml(privKeyStr);
-
-    //         //texto a encriptar
-    //         string txt = "HOLA";
-    //         //encriptamos con una clave publica generada
-    //         string resulEncrit = rsa2.Encrypt(txt, pubKey);
-    //         Console.WriteLine(resulEncrit);
-
-    //         //desencriptamos con una clave publica generada
-    //         string resulDecript = rsa2.Decrypt(resulEncrit, privKey);
-    //         Console.WriteLine(resulDecript);
-
-
-    //         // RsaEncryptionStatic2 rsa = new RsaEncryptionStatic2();
-    //         // string cypher = string.Empty;
-
-    //         // Console.WriteLine("Public key: {0}\n", rsa.GetPublicKey());
-    //         // Console.WriteLine("-----------------");
-    //         // Console.WriteLine("Private key: {0}\n", rsa.GetPrivateKey());
-
-    //         // Console.WriteLine("Enter yout text to encrypt: ");
-    //         // var text = Console.ReadLine();
-    //         // if (!string.IsNullOrEmpty(text)) {
-    //         //     cypher = rsa.Encrypt(text);
-    //         //     Console.WriteLine(cypher);
-    //         // }
-
-    //         // Console.WriteLine("Press to decrypt: ");
-    //         // Console.ReadLine();
-    //         // var plainText = rsa.Decrypt(cypher);
-    //         // Console.WriteLine("Decrypted message: {0}",plainText);
-    //         // Console.ReadLine();
-    //     }
-    // }
 }

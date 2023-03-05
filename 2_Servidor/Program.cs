@@ -7,7 +7,7 @@ using System.Collections.Generic;
 
 namespace servidorsincrono
 {
-    public class SynchronousSocketListener
+    public class Program
     {
 
         public static void StartListening()
@@ -78,11 +78,6 @@ namespace servidorsincrono
                         //item para buscar en servicio
                         string item = respClienteDesenc;
 
-                        // if (data == "") {
-                        //     //dejamos de recibir mensajes
-                        //     return;
-                        // }
-
                         Console.Write("{0} envio:\n nombreDeArchivo: {1}", handler.RemoteEndPoint, item);
 
                         //mensaje a enviar al cliente
@@ -134,16 +129,12 @@ namespace servidorsincrono
 
                         // Console.WriteLine(msjEncriptado);
 
+                        //pubkey*****privkey*****msjEncriptado
+
                         //enviarlo                        
                         byte[] msgToClient = Encoding.ASCII.GetBytes(msjEncriptado);
                         handler.Send(msgToClient);
 
-
-                        //recibir mensaje
-                        // int br = handler.Receive(bytes);
-                        // if (Encoding.ASCII.GetString(bytes, 0, br) == "salir") {
-                        //     break;
-                        // }
 
                     }
                     handler.Shutdown(SocketShutdown.Both);
@@ -201,9 +192,8 @@ namespace servidorsincrono
             return resulDecript;
         }
 
-        //verifica si un objeto esta en el servicio
+        //verifica si un objeto esta en el servicio web
         //para despues enviarlo o no
-        //
         static bool estaItemEnServicio(string nombre) {
             List<TodoItem> list = APIConsumer.GetItems();
             foreach(TodoItem item in list) {
@@ -214,8 +204,8 @@ namespace servidorsincrono
             return false;
         }
 
-        //verifica si un objeto esta en el servicio
-        //para despues enviarlo o no
+        //Retorna el objeto serializado como JSON
+        //cuyo nombre se especifica como parámetro.
         static string obtenerItemJSON(string nombre) {
             List<TodoItem> list = APIConsumer.GetItems();
             TodoItem item = null;
@@ -264,14 +254,6 @@ namespace servidorsincrono
             StartListening();
             return 0;
             // //prueba
-            // TodoItem item = APIConsumer.GetItems(1);
-            // Console.WriteLine(item.Name);
-            // return 0;
         }
     }
 }
-// > dotnet run
-// Waiting for a connection...
-// Text received : This is a test
-// Waiting for a connection...
-//

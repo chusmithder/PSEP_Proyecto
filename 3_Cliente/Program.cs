@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading;
 
 namespace clientesincrono {
-    public class SynchronousSocketClient {
+    public class Program {
 
         public static void StartClient() {
             try {
@@ -28,10 +28,12 @@ namespace clientesincrono {
                     Console.WriteLine("Socket connected to {0}", sender.RemoteEndPoint.ToString());
                     Console.WriteLine("Bienvenido a nuestra aplicacion");
 
+                    //bucle para enviar infinitos mensajes al servidor
                     while (true) {
                         //mostrar mensaje a cliente
                         Console.WriteLine("\n---------------------------");
                         Console.WriteLine("Debes teclear el nombre del archivo (SIN EXTENSION) que desas solicitar al servidor");
+                        //introduce nombre de item
                         string nombreArchivo = Console.ReadLine();
 
                         //enviar peticion de archivo al servidor
@@ -52,30 +54,26 @@ namespace clientesincrono {
                         msjEncriptado += resultados[2];
                         msjEncriptado += "<EOF>";
 
-                        
                         // Console.WriteLine(msjEncriptado);
 
                         //enviar al servido
                         byte[] msg = Encoding.ASCII.GetBytes(msjEncriptado);
                         int bytesSent = sender.Send(msg);
                         
-                        
-                        //recibir archivo o mensaje de error
-                        //formato de mensaje: 
-                        //("existe" *****  archivo) o ("no existe" ***** null)
+                        //recibir mensaje del servidor encriptado
                         byte[] bytes = new byte[10000];
                         int byteRec = sender.Receive(bytes);
                         string respSrvEncript = Encoding.ASCII.GetString(bytes, 0, byteRec);
                         // Console.WriteLine(respSrvEncript);
-                        // string pubkey = "";
-                        // string privKey = "";
-                        // string msjEncript = "";
+
                         string[] valores = respSrvEncript.Split("*****");//{pubkey, privkey, msj}
 
                         string respSrv = Desencriptar(valores[0], valores[1], valores[2]);
-                        Console.WriteLine(respSrv);
+                        // Console.WriteLine(respSrv);
                         
                         //parsear respuesta servidor
+                        //formato de mensaje: 
+                        //("existe"***** archivo) o ("no existe"*****"null")
                         int posSep = respSrv.IndexOf("*****");
                         string strExiste = respSrv.Substring(0, posSep);//serializado
                         string strArchivo = respSrv.Substring(posSep + 5);
@@ -103,12 +101,9 @@ namespace clientesincrono {
                         string seguir = Console.ReadLine();
                         
                         if (seguir.ToLower() == "n") {
-                            //enviar mensaje para salir
-                            // msg = Encoding.ASCII.GetBytes("salir");
-                            // bytesSent = sender.Send(msg);
                             
                             break;
-                        } 
+                        }
                     }
 
                     //cerrar conexion
