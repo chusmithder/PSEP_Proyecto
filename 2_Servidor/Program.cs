@@ -40,7 +40,6 @@ namespace servidorsincrono
                     Socket handler = listener.Accept();//aceptar conexion del cliente
                     Console.WriteLine("Conexion aceptada ...");
 
-                
 
                     //bucle para recibir varios mensajes
                     while (true)
@@ -54,7 +53,7 @@ namespace servidorsincrono
                         //bucle para solo un mensaje
                         while (true)
                         {
-                            bytes = new byte[1024];
+                            bytes = new byte[10000];
 
                             //recibimos el nombre del archivo enviado por el cliente
                             int byteRec = handler.Receive(bytes);
@@ -70,18 +69,27 @@ namespace servidorsincrono
                         //quitamos <EOF> de data
                         data =  data.Replace("<EOF>", "");//nombrearchivo
 
+                        //desencriptamos mensaje recibido
+                        string[] valores = data.Split("*****");//{pubkey, privkey, msj}
+
+                        string respClienteDesenc = Desencriptar(valores[0], valores[1], valores[2]);
+                        // Console.WriteLine(respClienteDesenc);
+
+                        //item para buscar en servicio
+                        string item = respClienteDesenc;
+
                         // if (data == "") {
                         //     //dejamos de recibir mensajes
                         //     return;
                         // }
 
-                        Console.Write("{0} envio:\n nombreDeArchivo: {1}", handler.RemoteEndPoint, data);
+                        Console.Write("{0} envio:\n nombreDeArchivo: {1}", handler.RemoteEndPoint, item);
 
                         //mensaje a enviar al cliente
                         string mensaje = "";
                         string mensajeSrv = "";
 
-                        if (estaItemEnServicio(data)) {
+                        if (estaItemEnServicio(item)) {
                             //enviamos el mensaje de exito y el archivo
 
                             //mensaje
@@ -89,7 +97,7 @@ namespace servidorsincrono
                             mensaje += "*****";
                             
                             //archivo
-                            string itemJSON = obtenerItemJSON(data);
+                            string itemJSON = obtenerItemJSON(item);
 
                             mensaje += itemJSON;
 
@@ -111,8 +119,22 @@ namespace servidorsincrono
                         Console.WriteLine(mensajeSrv);
                         //enviamos al cliente el mensaje
                         //encriptar mensaje a enviar
-                        
-                        byte[] msgToClient = Encoding.ASCII.GetBytes(mensaje);
+                        string[] resultados = encriptar(mensaje);
+                        string msjEncriptado = "";
+                        //pubkey
+                        msjEncriptado += resultados[0];
+                        msjEncriptado += "*****";
+                        //privkey
+                        msjEncriptado += resultados[1];
+                        msjEncriptado += "*****";
+                        //mensaje encriptado
+                        msjEncriptado += resultados[2];
+                        // msjEncriptado += "*****";
+
+                        // Console.WriteLine(msjEncriptado);
+
+                        //enviarlo                        
+                        byte[] msgToClient = Encoding.ASCII.GetBytes(msjEncriptado);
                         handler.Send(msgToClient);
 
 
@@ -138,8 +160,44 @@ namespace servidorsincrono
 
         }
 
-        string encriptar(string str) {
-            return "";
+        static string[] encriptar(string str) {
+            //instanciamos
+            RsaEncryptionStatic rsa = new RsaEncryptionStatic();
+            RsaEncryptionStatic rsa2 = new RsaEncryptionStatic();
+
+            //obtenemos string de claves privadas y publicas
+            //seran las que mandamos
+            string pubKeyStr = rsa.GetPublicKey();
+            string privKeyStr = rsa.GetPrivateKey();
+
+            //convertimos string de claves en RSAParameters
+            var pubKey = RsaEncryptionStatic.PublicParametersFromXml(pubKeyStr);
+            var privKey = RsaEncryptionStatic.PublicParametersFromXml(privKeyStr);
+
+            //texto a encriptar
+            // string txt = "HOLA";
+            //encriptamos con una clave publica generada
+            string resulEncrit = rsa2.Encrypt(str, pubKey);
+            // Console.WriteLine(resulEncrit);
+
+            string[] results = {pubKeyStr, privKeyStr, resulEncrit};
+
+            return results;
+        }
+
+        static string Desencriptar(string pubkeyStr, string privkeyStr, string msjEncriptado) {
+            //instanciamos
+            RsaEncryptionStatic rsa = new RsaEncryptionStatic();
+
+            //convertimos string de claves en RSAParameters
+            var pubKey = RsaEncryptionStatic.PublicParametersFromXml(pubkeyStr);
+            var privKey = RsaEncryptionStatic.PublicParametersFromXml(privkeyStr);
+
+            //desencriptamos con clave privada
+            string resulDecript = rsa.Decrypt(msjEncriptado, privKey);
+            // Console.WriteLine(resulDecript);
+
+            return resulDecript;
         }
 
         //verifica si un objeto esta en el servicio

@@ -35,15 +35,45 @@ namespace clientesincrono {
                         string nombreArchivo = Console.ReadLine();
 
                         //enviar peticion de archivo al servidor
-                        byte[] msg = Encoding.ASCII.GetBytes(nombreArchivo + "<EOF>");
-                        int bytesSent = sender.Send(msg);
+                        string msgNoEncriptado = nombreArchivo;
+                        
+                        //encriptar mensaje
+                        string[] resultados = encriptar(msgNoEncriptado);
+                        
+                        string msjEncriptado = "";
+                        
+                        //pubkey
+                        msjEncriptado += resultados[0];
+                        msjEncriptado += "*****";
+                        //privkey
+                        msjEncriptado += resultados[1];
+                        msjEncriptado += "*****";
+                        //mensaje encriptado
+                        msjEncriptado += resultados[2];
+                        msjEncriptado += "<EOF>";
 
+                        
+                        // Console.WriteLine(msjEncriptado);
+
+                        //enviar al servido
+                        byte[] msg = Encoding.ASCII.GetBytes(msjEncriptado);
+                        int bytesSent = sender.Send(msg);
+                        
+                        
                         //recibir archivo o mensaje de error
                         //formato de mensaje: 
                         //("existe" *****  archivo) o ("no existe" ***** null)
-                        byte[] bytes = new byte[1024];
+                        byte[] bytes = new byte[10000];
                         int byteRec = sender.Receive(bytes);
-                        string respSrv = Encoding.ASCII.GetString(bytes, 0, byteRec);
+                        string respSrvEncript = Encoding.ASCII.GetString(bytes, 0, byteRec);
+                        // Console.WriteLine(respSrvEncript);
+                        // string pubkey = "";
+                        // string privKey = "";
+                        // string msjEncript = "";
+                        string[] valores = respSrvEncript.Split("*****");//{pubkey, privkey, msj}
+
+                        string respSrv = Desencriptar(valores[0], valores[1], valores[2]);
+                        Console.WriteLine(respSrv);
                         
                         //parsear respuesta servidor
                         int posSep = respSrv.IndexOf("*****");
@@ -57,7 +87,6 @@ namespace clientesincrono {
                             Console.WriteLine("Este archivo {0} EXISTE en el servidor\n", nombreArchivo);
                             //recoger el archivo
                             Console.WriteLine("Contenido del archivo {0}.json: \n{1}\n", nombreArchivo, strArchivo);
-                            
                         }
 
                         //preguntar si quiere seguir
@@ -90,6 +119,48 @@ namespace clientesincrono {
                 Console.WriteLine(e.ToString());
             }
         }
+
+        static string[] encriptar(string str) {
+            //instanciamos
+            RsaEncryptionStatic rsa = new RsaEncryptionStatic();
+
+            //obtenemos string de claves privadas y publicas
+            //seran las que mandamos
+            string pubKeyStr = rsa.GetPublicKey();
+            string privKeyStr = rsa.GetPrivateKey();
+
+            //convertimos string de claves en RSAParameters
+            var pubKey = RsaEncryptionStatic.PublicParametersFromXml(pubKeyStr);
+            var privKey = RsaEncryptionStatic.PublicParametersFromXml(privKeyStr);
+
+            //encriptamos str con una clave publica generada
+            string resulEncrit = rsa.Encrypt(str, pubKey);
+            // Console.WriteLine(resulEncrit);
+
+            //devolvemos llave publica, privada y el mensaje encriptado
+            string[] results = {pubKeyStr, privKeyStr, resulEncrit};
+
+            return results;
+        }
+
+        
+
+        static string Desencriptar(string pubkeyStr, string privkeyStr, string msjEncriptado) {
+            //instanciamos
+            RsaEncryptionStatic rsa = new RsaEncryptionStatic();
+
+            //convertimos string de claves en RSAParameters
+            var pubKey = RsaEncryptionStatic.PublicParametersFromXml(pubkeyStr);
+            var privKey = RsaEncryptionStatic.PublicParametersFromXml(privkeyStr);
+
+            //desencriptamos con clave privada
+            string resulDecript = rsa.Decrypt(msjEncriptado, privKey);
+            // Console.WriteLine(resulDecript);
+
+            return resulDecript;
+        }
+
+        
 
         static IPAddress getLocalIpAddress() {
             IPAddress ipAddress = null;
